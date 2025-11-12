@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  background: black;
+  color:white;
+  font-family: Arial;
+  font-size: 14px;
+  text-align: center;
+}
+
+footer {
+  padding: 15px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
