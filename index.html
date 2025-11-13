@@ -7,6 +7,47 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  
+  <!-- Efe Ilgaz Köksal NO-7 Design the Header Section Start-->
+   <header class="Site-Header">
+
+        <div class="container-header">
+            <nav class="navbar">
+                <a href="#" class="logo"> <img src="./Photos/Photo-for-navbar/Logo.svg" alt="Logo"></a>
+               <button class="hamburger-icon" id="hamburger-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <div class="nav-collapse-menu" id="nav-menu">
+                    <ul class="nav-links">
+                        <li ><a href="#">Features</a></li>
+                        <li ><a href="#">Solutions</a></li>
+                        <li ><a href="#">Company</a></li>
+                        <li ><a href="#">Resources</a></li>
+                        <li ><a href="#">Contact</a></li>
+                    </ul>
+                    <div class="buttons-for-header">
+                    <a href="#" class="btn btn-login"><img src="Photos/Photo-for-navbar/Login.svg" alt="Login"></a>
+                    <a href="#" class="btn btn-signup"><img src="Photos/Photo-for-navbar/Signup.svg" alt="Sign up"></a>
+                </div>
+                
+                </div>
+            </nav>
+        </div>
+
+    </header>
+    <!-- Java Script for Hamburger Menu -->
+    <script>
+    document.addEventListener('DOMContentLoaded',()=>{
+    const hamburgerButton=document.getElementById('hamburger-toggle');
+    const  navMenu=document.getElementById('nav-menu');
+    hamburgerButton.addEventListener('click',()=>{
+    hamburgerButton.classList.toggle('is-active');
+    navMenu.classList.toggle('is-active');
+    });
+    });
+ </script>
+  <!-- Efe Ilgaz Köksal NO-7 Design the Header Section End-->
 </body>
 </html>
