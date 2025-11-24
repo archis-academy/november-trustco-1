@@ -1,7 +1,90 @@
 @import url("./styles/index.css");
 
-/* adınız -ticket numaranız -ticket isminiz start  */
+/* elif-No-13-Design-the-Building-Bridges-section start  */
 
-/* css kodları buraya gelecek */
+#building-bridges {
+    display: flex;
+    max-width: 1440px;
+    width: 100%;
+    max-height: 700px;
+    height: 100%;
+    padding-right: 150px;
+    gap: 177px;
+}
 
-/* adınız -ticket numaranız -ticket isminiz end  */
+.building-bridges-left-image {
+    position: relative;
+    display: inline-block;
+}
+
+.images-building-bridges-point {
+    gap: 16px;
+    top: 416px;
+    left: 491px;
+    object-fit: contain;
+    position: absolute;
+}
+
+.building-bridges-right-header-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+}
+
+.building-bridges-right-header-text h1 {
+    font-weight: var(--bold);
+    font-size: 60px;
+    line-height: 72px;
+    letter-spacing: -2%;
+}
+
+.header-grey-text {
+    color: #9ca3af;
+}
+
+.building-bridges-right-header-text p {
+    font-weight: var(--regular);
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0%;
+}
+
+.building-bridges-button {
+    display: flex;
+    align-items: center;
+    width: 205px;
+    height: 64px;
+    padding-top: 16px;
+    padding-right: 16px;
+    padding-bottom: 16px;
+    padding-left: 24px;
+    gap: 25px;
+    opacity: 1;
+    border-radius: 55px;
+    background-color: var(--deep-sea-blue);
+    color: var(--canvas-white);
+}
+
+.building-bridges-button-text {
+    font-weight: var(--bold);
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: right;
+    vertical-align: middle;
+    width: 108px;
+    height: 28px;
+    opacity: 1;
+}
+
+.images-building-bridges-vector {
+    width: 32px;
+    height: 32px;
+    gap: 10px;
+    opacity: 1;
+    border-radius: 100px;
+    padding: 4px;
+}
+
+/* elif-No-13-Design-the-Building-Bridges-section end  */
