@@ -1,7 +1,17 @@
-@import url("./styles/index.css");
+.cta-banner{
+display: flex;
 
-/* adınız -ticket numaranız -ticket isminiz start  */
 
-/* css kodları buraya gelecek */
 
-/* adınız -ticket numaranız -ticket isminiz end  */
+
+}
+.title{
+    font-family: "Lato", sans-serif;
+font-weight: 700;
+font-style: Bold;
+font-size: 60px;
+line-height: 72px;
+letter-spacing: -2%;
+text-transform: capitalize;
+
+} 
