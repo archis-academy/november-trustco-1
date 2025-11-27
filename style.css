@@ -1,7 +1,74 @@
 @import url("./styles/index.css");
+/* Ayşenur-NO-9 Implement the Video Section start */
 
-/* adınız -ticket numaranız -ticket isminiz start  */
+#video-section{
+    background-color:#043A53 ;
+    color:white;
+    padding:100px 150px 0;
+    
+}
+.container{
+    max-width:1140px;
+    margin: 0 auto;
+    
+}
+.section-header{
+    font-family:'Lato',sans-serif;
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap:40px;
+    margin-bottom: 64px;
+}
+.section-header h2{
+    font-weight: 700;
+    font-size:60px;
+    line-height: 72px;
+    max-width: 520px;
+}
+.section-header h2 span{
+    color:#F2C94C;
+    white-space: nowrap; /* tek satırda tutması için*/
+}
+.section-header p{
+    font-size: 20px;
+    line-height:30px;
+    max-width: 380px;
+}
+.video-thumbnail{
+    display:block;
+    border-radius: 16px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1130px;
+    margin: 0 auto;
+}
 
-/* css kodları buraya gelecek */
+.main-photo{
+    width: 100%;
+    display: block;
+}
+.play-button{
+    top:50%;
+    left:50%;
+    width: 90px;
+    height: 90px;
+    background-color:white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    transform: translate(-50%,-50%);
+}
+.play-button:hover{
+    transform: translate(-50%, -50%) scale(1.1); /*butonun yerinden kaymaması için*/
 
-/* adınız -ticket numaranız -ticket isminiz end  */
+}
+.play-button img{
+    width: 30px;
+    height: auto;
+}
+/* Ayşenur-NO-9 Implement the Video Section end */
