@@ -5,3 +5,38 @@
 /* css kodları buraya gelecek */
 
 /* adınız -ticket numaranız -ticket isminiz end  */
+
+/* sila - no-5 - trusted brands start */
+
+.client-brands {
+    width: 100%;
+    background-color: #FFFFFF;
+    
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    
+    padding: 50px 150px; 
+    box-sizing: border-box; 
+}
+
+.brand-text {
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    /* font-style satırı gereksizdi, sildik */
+    line-height: 24px;
+    letter-spacing: 0%;
+}
+
+.brand-logos {
+    display: flex;
+    align-items: center;
+    gap: 64px; 
+}
+
+.brand-logos img {
+    max-height: 30px; 
+    width: auto;
+}
+/* sila - no-5 - trusted brands end */
