@@ -1,5 +1,5 @@
 @import url("./styles/index.css");
-/* Ayşenur-NO-9 Implement the Video Section start */
+/* Ayşenur-NO-10 Implement the video section responsiveness start */
 
 #video-section{
     background-color:#043A53 ;
@@ -7,7 +7,7 @@
     padding:100px 150px 0;
     
 }
-.container{
+#video-section .container{
     max-width:1140px;
     margin: 0 auto;
     
@@ -28,7 +28,7 @@
 }
 .section-header h2 span{
     color:#F2C94C;
-    white-space: nowrap; /* tek satırda tutması için*/
+    white-space: nowrap;
 }
 .section-header p{
     font-size: 20px;
@@ -64,11 +64,47 @@
     transform: translate(-50%,-50%);
 }
 .play-button:hover{
-    transform: translate(-50%, -50%) scale(1.1); /*butonun yerinden kaymaması için*/
+    transform: translate(-50%, -50%) scale(1.1); 
 
 }
 .play-button img{
     width: 30px;
     height: auto;
 }
-/* Ayşenur-NO-9 Implement the Video Section end */
+@media (max-width: 1300px) {
+  .section-header {
+    flex-direction: column;
+  }
+  .section-header h2 span {
+    white-space: normal;
+  }
+}
+@media(max-width:768px){
+#video-section{
+    padding: 50px 20px 20px;
+}
+
+.section-header{
+    
+    gap:30px;
+    margin-bottom: 30px;
+}
+.section-header h2{
+    font-size: 30px;
+    line-height: 38px;
+}
+
+.section-header p{
+    font-size: 14px;
+    line-height: 20px;
+    max-width: 100%;
+}
+.play-button{
+    width: 35px;
+    height: 35px;
+}
+.play-button img{
+    width: 20px;
+}
+}
+/* Ayşenur-NO-10 Implement the video section responsiveness end */
