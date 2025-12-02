@@ -3,33 +3,71 @@
   /*Cemre Ozgules -NO-27 -Create the Site credits section start */
 
   
-  footer {
-  background-color: white;
-  padding: 20px;
-  text-align: center;
-  border-top: solid white;
-  margin-top: 50px;
-  font-size: 14px;
-
+ .same {
+    margin: 0;
+    padding: 0;
 }
 
- footer p {
-  margin: 5px;
-  color: grey;
 
- }
- 
-  
-  footer div {
-    margin: 5px;
+footer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    padding: 15px;
+    border-bottom: 1px solid grey;
+    z-index: 1000;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left p {
     color: grey;
-  }
+    font-size: 14px;
+    margin: 0;
+}
 
-  footer a {
-   color: blue;
-   text-decoration: none;
-   padding: 5px;
-  }
+.footer-center {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-center a {
+    text-decoration: none;
+    color: grey;
+    font-size: 14px;
+}
+
+.footer-center a:hover {
+    color: #007bff;
+}
+
+.footer-right p {
+    color: grey;
+    font-size: 14px;
+    margin: 0;
+}
+
+
+body {
+    padding-top: 70px;
+    margin: 0;
+}
+
+
+@media (max-width: 600px) {
+    .footer-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+
 
 
 /*Cemre Ozgules -NO-27 -Create the Site credits section end */
