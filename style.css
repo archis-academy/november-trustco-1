@@ -1,5 +1,7 @@
 @import url("./styles/index.css");
 
+
+
   /*Cemre Ozgules -NO-27 -Create the Site credits section start */
 
   
@@ -20,7 +22,8 @@ footer {
 
 
 .footer-container {
-    max-width: 1440 px;
+    max-width: 1440px;
+    padding: 24px 20px ;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -56,16 +59,12 @@ footer {
 }
 
 
-body {
-    padding-top: 70px;
-    margin: 0;
-}
+
 
 
 @media (max-width: 600px) {
     .footer-container {
-        border: 1 px solid red;
-        columns: 2;
+        flex-direction: column;
         gap: 10px;
     }
 }
@@ -74,4 +73,79 @@ body {
 
 
 /*Cemre Ozgules -NO-27 -Create the Site credits section end */
+
+/* Ayşenur-NO-9 Implement the Video Section start */
+.video-section{
+    background-color:#043A53 ;
+    color:white;
+    padding:100px 150px 20px;   
+}
+.video-section-container{
+    max-width:1140px;
+    margin: 0 auto;
+}
+.video-section-header{
+    font-family:'Lato',sans-serif;
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap:40px;
+    margin-bottom: 64px;
+}
+.video-section-header h2{
+    font-weight: 700;
+    font-size:60px;
+    line-height: 72px;
+    max-width: 520px;
+}
+.video-section-header h2 span{
+    color:#F2C94C;
+    white-space: nowrap; 
+}
+.video-section-header p{
+    font-size: 20px;
+    line-height:30px;
+    max-width: 380px;
+}
+.ekip-video {
+  width: 100%;
+  max-width: 1130px;
+  aspect-ratio: 1130 / 754;
+  display: block;
+  object-fit: cover;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+@media (max-width: 1300px) {
+  .video-section-header {
+    flex-direction: column;
+  }
+  .video-section-header h2 span {
+    white-space: normal;
+  }
+  .video-section-header p{
+    max-width: 100%;
+}
+}
+@media(max-width:768px){
+.video-section{
+    padding: 50px 20px 20px;
+}
+
+.video-section-header{
+    gap:30px;
+    margin-bottom: 30px;
+}
+.video-section-header h2{
+    font-size: 30px;
+    line-height: 38px;
+}
+.video-section-header p{
+    font-size: 14px;
+    line-height: 20px;
+}
+}
+
+/* Ayşenur-NO-9 Implement the Video Section end */
 
