@@ -97,20 +97,20 @@ footer {
     color: white;
     padding: 8px 16px;
     border-radius: 20px;
-    font-family: 'Lato', sans-serif;
+    font-family: var(--primary-font,'Lato',sans-serif); 
     font-weight: 400;
     font-size: 18px;
     margin-bottom: 20px;
 }
 .benefit-header h2{
-font-family: Lato, sans-serif;
+font-family: var(--primary-font,'Lato',sans-serif);
 font-weight: 700;
 font-size: 60px;
 letter-spacing: 0.1px;
 margin-bottom: 20px;
 }
 .benefit-header p{
-    font-family: Lato, sans-serif;
+    font-family: var(--primary-font,'Lato',sans-serif); 
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
@@ -132,18 +132,18 @@ margin-bottom: 20px;
     align-items: center;
 }
 .cards h3{
-    font-family: Lato, sans-serif;
+    font-family: var(--primary-font,'Lato',sans-serif);
     font-weight: 700;
     font-size: 24px;
     margin-bottom: 10px;
 }
 .cards p{
-    font-family: Lato, sans-serif;
+    font-family: var(--primary-font,'Lato',sans-serif);
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
 }
-@media(max-width:768px){
+@media(max-width:1000px){
     .benefit-container{
         flex-direction: column;
         align-items: center;
