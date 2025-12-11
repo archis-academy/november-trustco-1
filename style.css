@@ -13,7 +13,7 @@ section {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 0 40px;
+  padding: 40px;
 }
 
 .frame-three {
@@ -88,16 +88,13 @@ section {
 }
 
 @media (max-width: 768px) {
-  .right-place,
   .left-place,
-  .frame-four-links,
-  .frame-four-buttons {
+  .right-place {
     display: none;
   }
 }
 @media (max-width: 400px) {
-  .frame-one,
-  .frame-four {
+  .frame-one {
     flex-direction: column;
   }
 }
