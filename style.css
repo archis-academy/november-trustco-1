@@ -6,64 +6,14 @@ body {
   background-color: rgb(246, 246, 246);
   margin: 0;
 }
-.frame-four {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px 40px;
-  width: 100%;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
-
-.frame-four-links {
-  display: flex;
-  gap: 25px;
-}
-
-.frame-four-links a {
-  text-decoration: none;
-  color: #000;
-  font-weight: 500;
-}
-.frame-four-links span {
-  color: #043a53;
-}
-
-.frame-four-buttons {
-  display: flex;
-  gap: 15px;
-}
-
-.login-btn {
-  background-color: white;
-  color: black;
-  padding: 8px 24px;
-
-  border-radius: 10px;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-.signup-btn {
-  background-color: #043a53;
-  color: white;
-  padding: 8px 24px;
-  border-radius: 10px;
-  cursor: pointer;
-  font-size: 16px;
-}
 
 section {
-  min-height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
   padding: 0 40px;
-  position: relative;
 }
 
 .frame-three {
@@ -74,8 +24,8 @@ section {
   padding-top: 40px;
 }
 .right-place {
-  width: 300px;
-  max-width: 100%;
+  max-width: 300px;
+  width: 100%;
 }
 
 .left-place {
@@ -129,6 +79,12 @@ section {
 .play-icon {
   width: 20px;
   height: 20px;
+}
+
+.check-video {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 @media (max-width: 768px) {
