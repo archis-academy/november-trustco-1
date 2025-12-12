@@ -202,6 +202,92 @@
 }
 /* sila donmez NO-6 responsiveness end */
 
+/* Efe Ilgaz Köksal Implement the benefits section No 11 start */
+.benefits{
+    background-color: #f9f9f9;
+    padding: 100px 20px;
+}
+
+.benefit-container{
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+}
+.benefit-header{
+    flex:1;
+    padding-top: 100px;
+}
+.benefit-badge{
+    display : inline-block;
+    background-color: #043A53;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-family: var(--primary-font,'Lato',sans-serif); 
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.benefit-header h2{
+font-family: var(--primary-font,'Lato',sans-serif);
+font-weight: 700;
+font-size: 60px;
+letter-spacing: 0.1px;
+margin-bottom: 20px;
+}
+.benefit-header p{
+    font-family: var(--primary-font,'Lato',sans-serif); 
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+}
+.benefit-cards{
+    flex: 3;
+    display: flex;
+    gap: 30px;
+}
+.cards{
+    background: #F2F5F6;
+    padding: 40px;
+    border-radius: 16px;
+    flex: 1;
+}
+.card-design{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+.cards h3{
+    font-family: var(--primary-font,'Lato',sans-serif);
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.cards p{
+    font-family: var(--primary-font,'Lato',sans-serif);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+}
+@media(max-width:1000px){
+    .benefit-container{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .benefit-header{
+        padding-top: 0;
+        margin-bottom: 40px;
+        width: 100%;
+    }
+    .benefit-cards{
+        flex-direction: column;
+    }
+   
+}
+/* Efe Ilgaz Köksal Implement the benefits section No 11 end */
 
   /*Cemre Ozgules -NO-27 -Create the Site credits section start */
 
