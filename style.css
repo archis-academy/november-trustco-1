@@ -1,8 +1,18 @@
 @import url("./styles/index.css");
 
-/* adınız -ticket numaranız -ticket isminiz start  */
+/* sila donmez No-5 trusted brands start */
 
-/* css kodları buraya gelecek */
+.client-brands {
+    width: 100%;
+    background-color: #FFFFFF;
+    
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    
+    padding: 50px 20px; 
+    box-sizing: border-box; 
+}
 
 /* Efe Ilgaz Köksal No-7  Design the Header Section Start*/
 .site-header{
@@ -148,3 +158,306 @@
 /* Efe Ilgaz Köksal No-7  Design the Header Section end*/
 
 /* adınız -ticket numaranız -ticket isminiz end  */
+.brand-text {
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    /* font-style satırı gereksizdi, sildik */
+    line-height: 24px;
+    letter-spacing: 0%;
+}
+
+.brand-logos {
+    display: flex;
+    align-items: center;
+    gap: 64px; 
+}
+
+.brand-logos img {
+    max-height: 30px; 
+    width: auto;
+}
+/* sila donmez NO-5 trusted brands end */
+
+/* sila donmez NO-6 responsiveness start */
+@media (max-width: 1080px) {
+    .client-brands {
+        flex-direction: column;
+        padding: 40px 24px;
+        height: auto;
+        gap: 32px;
+    }
+
+    .brand-logos {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 24px;
+        margin-top: 0;
+    }
+
+    .brand-text {
+        text-align: center;
+        margin-bottom: 0;
+    }
+}
+/* sila donmez NO-6 responsiveness end */
+
+
+  /*Cemre Ozgules -NO-27 -Create the Site credits section start */
+
+  
+ .footer-link {
+     margin: 0;
+    padding: 0;
+}
+
+
+footer {
+  
+    background: white;
+    padding: 15px;
+    border-top: 1px solid grey;
+
+}
+
+
+
+.footer-container {
+    max-width: 1440px;
+    padding: 24px 20px ;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left p {
+    color: grey;
+    font-size: 14px;
+    margin: 0;
+}
+
+.footer-center {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-center a {
+    text-decoration: none;
+    color: grey;
+    font-size: 14px;
+}
+
+.footer-center a:hover {
+    color: blue;
+}
+
+.footer-right p {
+    font-family: var(--primary-font,'Lato',sans-serif); 
+    color: grey;
+    font-size: 14px;
+    margin: 0;
+}
+
+
+
+
+
+@media (max-width: 600px) {
+    .footer-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+
+
+
+/*Cemre Ozgules -NO-27 -Create the Site credits section end */
+
+/* Ayşenur-NO-9 Implement the Video Section start */
+.video-section{
+    background-color:#043A53 ;
+    color:white;
+    padding:100px 150px 20px;   
+}
+.video-section-container{
+    max-width:1140px;
+    margin: 0 auto;
+}
+.video-section-header{
+    font-family:'Lato',sans-serif;
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap:40px;
+    margin-bottom: 64px;
+}
+.video-section-header h2{
+    font-weight: 700;
+    font-size:60px;
+    line-height: 72px;
+    max-width: 520px;
+}
+.video-section-header h2 span{
+    color:#F2C94C;
+    white-space: nowrap; 
+}
+.video-section-header p{
+    font-size: 20px;
+    line-height:30px;
+    max-width: 380px;
+}
+.ekip-video {
+  width: 100%;
+  max-width: 1130px;
+  aspect-ratio: 1130 / 754;
+  display: block;
+  object-fit: cover;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+@media (max-width: 1300px) {
+  .video-section-header {
+    flex-direction: column;
+  }
+  .video-section-header h2 span {
+    white-space: normal;
+  }
+  .video-section-header p{
+    max-width: 100%;
+}
+}
+@media(max-width:768px){
+.video-section{
+    padding: 50px 20px 20px;
+}
+
+.video-section-header{
+    gap:30px;
+    margin-bottom: 30px;
+}
+.video-section-header h2{
+    font-size: 30px;
+    line-height: 38px;
+}
+.video-section-header p{
+    font-size: 14px;
+    line-height: 20px;
+}
+}
+
+/* Ayşenur-NO-9 Implement the Video Section end */
+
+/* elif-No-13-Design-the-Building-Bridges-section start  */
+
+#building-bridges {
+    display: flex;
+    max-width: 1440px;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px 20px;
+}
+
+.building-bridges-left-image {
+    position: relative;
+    max-width: 702px;
+    width: 100%;
+}
+
+.images-building-bridges-big-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.images-building-bridges-point {
+    position: absolute;
+    width: clamp(90px, 28%, 229px); /* Min | Responsive | Max */
+    right: clamp(8px, 4%, 24px);
+    bottom: clamp(8px, 4%, 24px);
+}
+
+.building-bridges-right-header-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 650px;
+    max-height: 700px;
+    gap: clamp(16px, 4vw, 32px);
+}
+
+.building-bridges-right-header-text h1 {
+    font-style: var(--primary-font);
+    font-weight: var(--bold);
+    font-size: clamp(30px, 4vw, 60px);
+    line-height: clamp(32px, 4vw, 72px);
+}
+
+.header-grey-text {
+    color: #9ca3af;
+}
+
+.building-bridges-right-header-text p {
+    font-style: var(--primary-font);
+    font-weight: var(--regular);
+    font-size: clamp(14px, 4vw, 20px);
+    line-height: clamp(20px, 4vw, 30px);
+}
+
+.building-bridges-button {
+    display: flex;
+    align-items: center;
+    width: 205px;
+    height: 64px;
+    padding: 16px 16px 16px 24px;
+    gap: 25px;
+    opacity: 1;
+    border-radius: 55px;
+    background-color: var(--deep-sea-blue);
+    color: var(--canvas-white);
+}
+
+.building-bridges-button-text {
+    font-weight: var(--bold);
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: right;
+    vertical-align: middle;
+    width: 108px;
+    height: 28px;
+}
+
+.images-building-bridges-vector {
+    width: 32px;
+    height: 32px;
+    gap: 10px;
+    opacity: 1;
+    border-radius: 100px;
+    padding: 4px;
+}
+
+@media (max-width: 1023px) {
+    #building-bridges {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        margin: auto;
+    }
+
+    .building-bridges-left-image {
+        margin: auto;
+    }
+
+    .building-bridges-right-header-text {
+        margin: auto;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+/* elif-No-13-Design-the-Building-Bridges-section end  */
