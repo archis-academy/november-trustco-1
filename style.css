@@ -4,44 +4,45 @@
 
 .client-brands {
     width: 100%;
-    background-color: #ffffff;
-
+    background-color: #FFFFFF;
+    
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    padding: 50px 20px;
-    box-sizing: border-box;
+    align-items: center; 
+    justify-content: space-between; 
+    
+    padding: 50px 20px; 
+    box-sizing: border-box; 
 }
 
 /* Efe Ilgaz Köksal No-7  Design the Header Section Start*/
-.site-header {
+.site-header{
     background-color: #fff;
     padding: 15px 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.navbar {
+.navbar{
     display: flex;
     align-items: center;
-    background-color: #ffffff;
+    background-color: #FFFFFF;
     padding: 15px 30px;
     justify-content: space-between;
     width: 100%;
     box-sizing: border-box;
 }
-.logo {
+.logo{
     width: 150px;
     height: auto;
+
 }
 
-.logo img {
+.logo img{
     height: 100%;
     width: auto;
     display: block;
 }
 
-.nav-links {
+.nav-links{
     display: flex;
     list-style: none;
     gap: 40px;
@@ -54,9 +55,9 @@
     margin: 0 auto;
 }
 
-.nav-links a {
-    text-decoration: none;
-    color: #043a53;
+.nav-links a{
+   text-decoration: none;
+    color: #043A53;
     transition: color 0.3s ease;
 }
 
@@ -64,7 +65,8 @@
     text-decoration: underline;
 }
 
-.buttons-for-header {
+
+.buttons-for-header{
     width: 194px;
     height: 50px;
     gap: 10px;
@@ -72,21 +74,22 @@
     align-items: center;
 }
 
-.buttons-for-header img {
+.buttons-for-header img{
     transition: transform 0.3s ease;
 }
-.buttons-for-header img:hover {
+.buttons-for-header img:hover{
     transform: scale(1.1);
 }
 
-.nav-collapse-menu {
+
+.nav-collapse-menu{
     display: flex;
     align-items: center;
     flex-grow: 1;
 }
 
-#hamburger-icon {
-    font-size: 24px;
+#hamburger-icon{
+     font-size: 24px;
     display: none;
     flex-direction: column;
     justify-content: space-around;
@@ -102,7 +105,7 @@
     #hamburger-icon {
         display: block;
     }
-    .navbar {
+    .navbar{
         justify-content: space-between;
     }
     .nav-collapse-menu {
@@ -123,6 +126,7 @@
         z-index: 1000;
         align-items: center;
         padding: 20px 0;
+       
     }
     .nav-collapse-menu.is-active {
         opacity: 1;
@@ -140,21 +144,22 @@
     .nav-links li {
         width: 100%;
     }
-
+    
+    
     .buttons-for-header {
-        display: none;
+       display: none;
     }
 
-    .btn.btn-login,
+   .btn.btn-login,
     .btn.btn-signup {
-        display: none !important;
+         display: none !important;
     }
 }
 /* Efe Ilgaz Köksal No-7  Design the Header Section end*/
 
 /* adınız -ticket numaranız -ticket isminiz end  */
 .brand-text {
-    font-family: "Lato", sans-serif;
+    font-family: 'Lato', sans-serif;
     font-weight: 500;
     font-size: 16px;
     /* font-style satırı gereksizdi, sildik */
@@ -165,11 +170,11 @@
 .brand-logos {
     display: flex;
     align-items: center;
-    gap: 64px;
+    gap: 64px; 
 }
 
 .brand-logos img {
-    max-height: 30px;
+    max-height: 30px; 
     width: auto;
 }
 /* sila donmez NO-5 trusted brands end */
@@ -197,22 +202,115 @@
 }
 /* sila donmez NO-6 responsiveness end */
 
-/*Cemre Ozgules -NO-27 -Create the Site credits section start */
+/* Efe Ilgaz Köksal Implement the benefits section No 11 start */
+.benefits{
+    background-color: #f9f9f9;
+    padding: 100px 20px;
+}
 
-.footer-link {
-    margin: 0;
+.benefit-container{
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+}
+.benefit-header{
+    flex:1;
+    padding-top: 100px;
+}
+.benefit-badge{
+    display : inline-block;
+    background-color: #043A53;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-family: var(--primary-font,'Lato',sans-serif); 
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.benefit-header h2{
+font-family: var(--primary-font,'Lato',sans-serif);
+font-weight: 700;
+font-size: 60px;
+letter-spacing: 0.1px;
+margin-bottom: 20px;
+}
+.benefit-header p{
+    font-family: var(--primary-font,'Lato',sans-serif); 
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+}
+.benefit-cards{
+    flex: 3;
+    display: flex;
+    gap: 30px;
+}
+.cards{
+    background: #F2F5F6;
+    padding: 40px;
+    border-radius: 16px;
+    flex: 1;
+}
+.card-design{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+.cards h3{
+    font-family: var(--primary-font,'Lato',sans-serif);
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.cards p{
+    font-family: var(--primary-font,'Lato',sans-serif);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+}
+@media(max-width:1000px){
+    .benefit-container{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .benefit-header{
+        padding-top: 0;
+        margin-bottom: 40px;
+        width: 100%;
+    }
+    .benefit-cards{
+        flex-direction: column;
+    }
+   
+}
+/* Efe Ilgaz Köksal Implement the benefits section No 11 end */
+
+  /*Cemre Ozgules -NO-27 -Create the Site credits section start */
+
+  
+ .footer-link {
+     margin: 0;
     padding: 0;
 }
 
+
 footer {
+  
     background: white;
     padding: 15px;
     border-top: 1px solid grey;
+
 }
+
+
 
 .footer-container {
     max-width: 1440px;
-    padding: 24px 20px;
+    padding: 24px 20px ;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -241,11 +339,15 @@ footer {
 }
 
 .footer-right p {
-    font-family: var(--primary-font, "Lato", sans-serif);
+    font-family: var(--primary-font,'Lato',sans-serif); 
     color: grey;
     font-size: 14px;
     margin: 0;
 }
+
+
+
+
 
 @media (max-width: 600px) {
     .footer-container {
@@ -254,79 +356,82 @@ footer {
     }
 }
 
+
+
+
 /*Cemre Ozgules -NO-27 -Create the Site credits section end */
 
 /* Ayşenur-NO-9 Implement the Video Section start */
-.video-section {
-    background-color: #043a53;
-    color: white;
-    padding: 100px 150px 20px;
+.video-section{
+    background-color:#043A53 ;
+    color:white;
+    padding:100px 150px 20px;   
 }
-.video-section-container {
-    max-width: 1140px;
+.video-section-container{
+    max-width:1140px;
     margin: 0 auto;
 }
-.video-section-header {
-    font-family: "Lato", sans-serif;
-    display: flex;
+.video-section-header{
+    font-family:'Lato',sans-serif;
+    display:flex;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 40px;
+    gap:40px;
     margin-bottom: 64px;
 }
-.video-section-header h2 {
+.video-section-header h2{
     font-weight: 700;
-    font-size: 60px;
+    font-size:60px;
     line-height: 72px;
     max-width: 520px;
 }
-.video-section-header h2 span {
-    color: #f2c94c;
-    white-space: nowrap;
+.video-section-header h2 span{
+    color:#F2C94C;
+    white-space: nowrap; 
 }
-.video-section-header p {
+.video-section-header p{
     font-size: 20px;
-    line-height: 30px;
+    line-height:30px;
     max-width: 380px;
 }
 .ekip-video {
-    width: 100%;
-    max-width: 1130px;
-    aspect-ratio: 1130 / 754;
-    display: block;
-    object-fit: cover;
-    margin: 0 auto;
-    border-radius: 10px;
+  width: 100%;
+  max-width: 1130px;
+  aspect-ratio: 1130 / 754;
+  display: block;
+  object-fit: cover;
+  margin: 0 auto;
+  border-radius: 10px;
 }
 
 @media (max-width: 1300px) {
-    .video-section-header {
-        flex-direction: column;
-    }
-    .video-section-header h2 span {
-        white-space: normal;
-    }
-    .video-section-header p {
-        max-width: 100%;
-    }
+  .video-section-header {
+    flex-direction: column;
+  }
+  .video-section-header h2 span {
+    white-space: normal;
+  }
+  .video-section-header p{
+    max-width: 100%;
 }
-@media (max-width: 768px) {
-    .video-section {
-        padding: 50px 20px 20px;
-    }
+}
+@media(max-width:768px){
+.video-section{
+    padding: 50px 20px 20px;
+}
 
-    .video-section-header {
-        gap: 30px;
-        margin-bottom: 30px;
-    }
-    .video-section-header h2 {
-        font-size: 30px;
-        line-height: 38px;
-    }
-    .video-section-header p {
-        font-size: 14px;
-        line-height: 20px;
-    }
+.video-section-header{
+    gap:30px;
+    margin-bottom: 30px;
+}
+.video-section-header h2{
+    font-size: 30px;
+    line-height: 38px;
+}
+.video-section-header p{
+    font-size: 14px;
+    line-height: 20px;
+}
 }
 
 /* Ayşenur-NO-9 Implement the Video Section end */
@@ -442,6 +547,252 @@ footer {
 }
 
 /* elif-No-13-Design-the-Building-Bridges-section end  */
+/* Ayşenur Aygün Develop "Blogs (What's New)" Section start */
+#blogs{
+    padding: 100px 150px 150px 150px;
+    font-family:var(--primary-font);
+}
+
+.blogs-container{
+    max-width:1140px;
+    margin: 0 auto;
+}
+
+.blogs-header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 64px; 
+}
+
+.blogs-header h2{
+    font-size: var(--font-4xl);
+    font-weight: var(--bold);
+    color: var(--midnight-black);
+}
+.blogs-header h2 span{
+    color: var(--deep-sea-blue);
+}
+
+.see-all{
+    font-size: var(--font-l);
+    font-weight: var(--bold);
+    text-decoration: none;
+    color:var(--midnight-black);
+    width: 95px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+.blogs-cards{
+    display: flex;
+    gap:32px;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    justify-content: flex-start;
+    
+}
+.blog-card{
+    width: 344px;
+    background: var(--canvas-white);
+    border:1px solid var(--soft-ivory);
+    border-radius:8px ;
+    box-shadow: 0px 1px 2px rgba(0,0,0,0.08); 
+    overflow: hidden;
+}
+.blog-card>img{
+    width: 100%;
+    height:257px;
+    object-fit: cover;
+    display: block;
+}
+
+
+.blog-info{
+    padding:25px 24px 25px;
+    gap:16px;
+}
+
+.blog-meta{
+    font-size:var(--font-xxl);
+    margin-bottom: 10px;
+}
+.blog-date{
+    font-weight: var(--bold);
+    color:var(--pure-black);
+    font-size:var(--font-m);
+}
+.blog-author{
+    font-weight: var(--regular);
+    font-size:var(--font-m);
+    color:var(--slate-grey);
+}
+.blog-title{
+    font-size: var(--font-xxl) ;
+    font-weight: var(--bold);
+    margin-bottom:10px ;
+}
+.blog-text{
+    font-size:var(--font-l) ;
+    color: var(--slate-grey);
+    margin-bottom: 15px;
+    line-height: 28px;
+}
+.read-more{
+    font-size: var(--font-l);
+    font-weight:var(--bold) ;
+    color: var(--midnight-black);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap:16px;
+}
+.read-more-icon{
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+}
+
+
+
+@media (max-width:372px) {
+    #blogs{
+        padding: 50px 20px 50px 20px;
+    }
+    .blogs-container{
+        max-width:100%;
+    }
+    .blogs-header{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:16px;
+    }
+    .blogs-header h2 {
+        font-size: var(--font-3xl);
+        line-height: 38px;
+    }
+    .blogs-cards{
+        gap:32px;
+        overflow-x:auto;
+        flex-wrap:nowrap;
+        padding-bottom:10px ;
+        
+    }
+    .blog-card{
+        width: 344px;
+        max-width: 344px;
+        
+    }    
+    .blog-info{
+        padding: 16px;
+    }
+    .blog-title{
+        font-size:var(--font-l);
+    }
+    .blog-text{
+        font-size: var(--font-s);
+        line-height: 20px;
+        max-height: 60px;     
+        overflow: hidden;
+    }
+    .read-more{
+        font-size: var(--font-s);
+    }
+    .see-all{
+        margin:32px auto 0 auto;
+    }
+}
+
+
+
+
+@media (max-width: 1024px) {
+    #blogs{
+    font-family: var(--primary-font);
+    }
+  .blogs-container{
+    max-width: 100%;
+  }
+
+  .blogs-cards{
+    flex-wrap: wrap;          
+    justify-content: center;  
+  }
+
+  .blog-card{
+    max-width: 320px;         
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  #blogs{
+    padding: 50px 20px 50px 20px;
+    position:relative;
+  }
+
+  .blogs-container{
+    max-width: 100%;
+  }
+  .blogs-header{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .blogs-header h2{
+    font-size: var(--font-3xl);
+    line-height: 32px;
+  }
+  .blogs-cards{
+    display: flex;
+    flex-wrap: nowrap;          
+    overflow-x: auto;             
+    gap: 32px;                   
+    padding-bottom: 30px;
+    justify-content: flex-start;
+  }
+  .blog-card{
+    flex: 0 0 100%;             
+    max-width: 100%;
+  }
+  .blog-date{
+    font-size: var(--font-xs);
+  }
+  .blog-author{
+    font-size: var(--font-xs);
+  }
+  .blog-info{
+    padding: 16px;
+  }
+
+  .blog-title{
+    font-size: var(--font-l);
+    font-weight: var(--bold);
+  }
+
+  .blog-text{
+    font-size: var(--font-s);
+    line-height: 20px;
+    max-height: 66px;             
+    overflow: hidden;             
+  }
+  .read-more{
+     font-size: var(--font-s);
+  }
+  .see-all{
+    position: absolute;
+    bottom:16px;
+    left:50%;
+    transform: translateX(-50%);
+    margin:0;    
+  }
+}
+
+/* Ayşenur Aygün Develop "Blogs (What's New)" Section end */
 
 /* elif-No-15-Implement-the-Numbers-Section start  */
 .implement-numbers {
