@@ -1,0 +1,42 @@
+.main {
+   margin-top: 200px;
+display: block;
+/* üstten olunca margin top. 100 px lik boşluk oluştu. alttan olsa margin bottom derdik. */
+  /* margin 0 auto ile ortalayabilirsin. 0 yerine 100 yazarsan alttan üsten boşluklu olur */
+
+}
+
+.logo-img {
+width: 300px;
+display: block; 
+
+/* display block sayesinde altına geliyor. yoksa yanına gelirdi */
+margin: 0 auto;
+
+}
+
+.search-input {
+  width: 400px;
+  display: block; 
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.luck {
+  width: 300px;
+  display: block; 
+ 
+  margin: 0 auto;
+  margin-top: 15px;
+}
+
+.title {
+  border: 2px solid rgb(142, 142, 7);
+   margin-top: 200px;   
+  /* borderın üstten 200 boşluk */
+  /* padding: 0 50px; */
+  /* borderın içinde alt üstten 0, sağdan soldan 50 boşluk */
+  padding: 20px;
+  /* border içinde dört bir yandan 20 boşluk */
+  text-align: center; /*ortaladı */
+}
